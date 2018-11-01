@@ -49,12 +49,18 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BindMatcher.cs" />
     <Compile Include="BindState.cs" />
+    <Compile Include="GameListMatcher.cs" />
     <Compile Include="GameListState.cs" />
+    <Compile Include="GetLanguageMenuState.cs" />
+    <Compile Include="ICommandMatcher.cs" />
     <Compile Include="LineBot.cs" />
     <Compile Include="LineBotState.cs" />
+    <Compile Include="SetLanguageState.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WelcomeMatcher.cs" />
     <Compile Include="WelcomeState.cs" />
   </ItemGroup>
   <ItemGroup>

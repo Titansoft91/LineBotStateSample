@@ -2,28 +2,26 @@
 
 namespace LineBotStateSample
 {
-    internal class WelcomeState : LineBotState
+    public class SetLanguageState : LineBotState
     {
         public override void Default(string text)
         {
-            Console.WriteLine("welcome");
+            Console.WriteLine($"set language:{text}");
         }
 
         public override void Welcome(string text)
         {
-            Default(text);
+            throw new NotImplementedException();
         }
 
         public override void Bind(string text)
         {
-            base._lineBot.SetCurrentState(LineBot._bindState);
-            base._lineBot.Bind(text);
+            throw new NotImplementedException();
         }
 
         public override void GameList(string text)
         {
-            base._lineBot.SetCurrentState(LineBot._gameListState);
-            base._lineBot.GameList(text);
+            throw new NotImplementedException();
         }
 
         public override void GetLanguageMenu(string text)
